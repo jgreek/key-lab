@@ -127,3 +127,23 @@ class DisplayManager:
                 print(f"{action['code']:<12} {action['count']:<8} {action['last_action']:<20} {action['comment'][:25]}")
 
         print("=" * 60)
+
+    def print_recent_commands(self):
+        print("\n" + "=" * 60)
+        print("10 Most Recent Commands".center(60))
+        print("=" * 60)
+
+        actions = self.csv_logger.get_recent_actions()
+
+        if not actions:
+            print("No usage data available yet.")
+            return
+
+        print(f"{'Code':<12} {'Count':<8} {'Last Used':<20} {'Comment'}")
+        print("-" * 60)
+
+        for action in actions[:10]:  # Show top 10 most recent
+            if action['code']:
+                print(f"{action['code']:<12} {action['count']:<8} {action['last_action']:<20} {action['comment'][:25]}")
+
+        print("=" * 60)

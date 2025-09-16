@@ -23,17 +23,40 @@ class CommandExecutor:
             print(f"The file or directory {app_path} does not exist.")
 
     def run_iterm_command(self, command):
+        # Escape quotes and backslashes in the command for AppleScript
+        escaped_command = command.replace('\\', '\\\\').replace('"', '\\"')
+        
         applescript = f'''
             tell application "iTerm2"
+                activate
                 tell current window
-                    create window with default profile
+                    create tab with default profile
                     tell current session
-                        write text "{command}"
+                        write text "{escaped_command}"
                     end tell
                 end tell
             end tell
             '''
-        subprocess.run(["osascript", "-e", applescript])
+        try:
+            subprocess.run(["osascript", "-e", applescript], check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Error executing iTerm command: {e}")
+            # Fallback: try with iTerm (version 1) if iTerm2 fails
+            applescript_v1 = f'''
+                tell application "iTerm"
+                    activate
+                    tell current terminal
+                        launch session "Default Session"
+                        tell current session
+                            write text "{escaped_command}"
+                        end tell
+                    end tell
+                end tell
+                '''
+            try:
+                subprocess.run(["osascript", "-e", applescript_v1], check=True)
+            except subprocess.CalledProcessError as e2:
+                print(f"Error with both iTerm2 and iTerm: {e2}")
 
     def run_file_command(self, file_command):
         try:

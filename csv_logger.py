@@ -68,7 +68,7 @@ class CSVLogger:
                 for code_key in sorted(existing_data.keys()):
                     writer.writerow(existing_data[code_key])
 
-            logging.info(f"Logged action: {code} (count: {self.action_counts[code]})")
+            # Action logged silently to reduce console noise
 
         except Exception as e:
             logging.error(f"Error logging action to CSV: {e}")
@@ -90,4 +90,21 @@ class CSVLogger:
             return actions
         except Exception as e:
             logging.error(f"Error reading CSV stats: {e}")
+            return []
+
+    def get_recent_actions(self):
+        """Get actions sorted by timestamp (most recent first)"""
+        if not self.csv_log_path.exists():
+            return []
+
+        try:
+            with open(self.csv_log_path, 'r', newline='', encoding='utf-8') as csvfile:
+                reader = csv.DictReader(csvfile)
+                actions = list(reader)
+
+            # Sort by last_action timestamp in descending order (most recent first)
+            actions.sort(key=lambda x: x.get('last_action', ''), reverse=True)
+            return actions
+        except Exception as e:
+            logging.error(f"Error reading CSV recent actions: {e}")
             return []

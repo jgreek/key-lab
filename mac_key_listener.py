@@ -4,6 +4,7 @@ from pathlib import Path
 from pynput import keyboard
 from config_manager import ConfigManager
 from csv_logger import CSVLogger
+from csv_cleaner import CSVCleaner
 from key_tracker import KeyTracker
 from command_executor import CommandExecutor
 from display_manager import DisplayManager
@@ -16,14 +17,18 @@ class MacKeyListener:
         self.app_dir = Path(os.path.dirname(os.path.abspath(__file__)))
 
         # Initialize components
-        self.config_manager = ConfigManager(self.app_dir / "mac_key_listener_config.json")
+        self.config_manager = ConfigManager(self.app_dir / "config.json")
         self.csv_logger = CSVLogger(self.app_dir / "key_listener_actions.csv")
+        self.csv_cleaner = CSVCleaner(self.csv_logger, self.config_manager)
         self.key_tracker = KeyTracker(
             combo_timeout=self.config_manager.get_setting("combo_timeout_seconds", 5.0),
             max_combo_length=3
         )
         self.command_executor = CommandExecutor(self.app_dir)
         self.display_manager = DisplayManager(self.config_manager, self.csv_logger)
+
+        # Clean up CSV file on startup
+        self.csv_cleaner.cleanup_outdated_entries()
 
         # Initialize keyboard listener
         self.listener = keyboard.Listener(on_press=self.on_press, on_release=self.on_release)
@@ -51,7 +56,8 @@ class MacKeyListener:
                     if not self.key_tracker.shift_pressed and not self.key_tracker.option_pressed:
                         self.handle_key_combo(f"cmd+{key.char}")
                     else:
-                        logging.info(f"Shift+Cmd+{key.char} pressed, action not performed")
+                        # Shift+Cmd combination not configured - skip silently
+                        pass
 
         except Exception as e:
             logging.error(f"Error handling key {key}: {str(e)}", exc_info=True)
@@ -67,6 +73,8 @@ class MacKeyListener:
         if config_updated:
             # Update key tracker timeout if config changed
             self.key_tracker.combo_timeout = self.config_manager.get_setting("combo_timeout_seconds", 5.0)
+            # Clean up CSV file when config is updated
+            self.csv_cleaner.cleanup_outdated_entries()
             self.display_manager.print_cheatsheet()
 
         # Only process configured shortcuts
@@ -92,6 +100,7 @@ class MacKeyListener:
         print("Config auto-reload enabled - changes will be detected on next key press")
         self.display_manager.print_cheatsheet()
         self.display_manager.print_csv_stats()
+        self.display_manager.print_recent_commands()
         self.display_manager.print_least_used_commands()
         print("\nPress Ctrl+C to exit.")
 
@@ -102,3 +111,4 @@ class MacKeyListener:
                 print("\nMacKeyListener stopped.")
                 print("Final usage statistics:")
                 self.display_manager.print_csv_stats()
+                self.display_manager.print_recent_commands()

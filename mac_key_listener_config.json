@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "backspace_custom_combo": true,
+    "combo_timeout_seconds": 5.0
+  },
+  "apps": {
+    "cmd+1": "/Applications/Google Chrome.app",
+    "cmd+2": "/Applications/PyCharm.app",
+    "cmd+3": "/Applications/Microsoft Outlook.app",
+    "cmd+4": "/Applications/iTerm.app",
+    "cmd+5": "/Applications/Symphony.app"
+  },
+  "commands": {
+    "cmd+6": [
+      {
+        "command": "mxx",
+        "delay": 10
+      },
+      {
+        "command": "gparun",
+        "delay": 0
+      },
+      {
+        "command": "v2run",
+        "delay": 0
+      }
+    ],
+    "cmd+7": [
+      {
+        "command": "xx",
+        "delay": 0
+      }
+    ],
+    "cmd+8": [
+      {
+        "command": "top",
+        "delay": 0
+      }
+    ]
+  }
+}

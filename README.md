@@ -24,7 +24,7 @@ A powerful and configurable keyboard shortcut manager for macOS.
 
 ## Configuration
 
-The application will create a `mac_key_listener_config.json` file on first run.
+The application uses a `config.json` file for configuration.
 Edit this file to customize your shortcuts and settings.
 
 ## Files

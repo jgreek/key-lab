@@ -1,0 +1,610 @@
+{
+  "settings": {
+    "backspace_custom_combo": true,
+    "combo_timeout_seconds": 2.0
+  },
+  "apps": {
+    "cmd+2": "/Applications/PyCharm.app",
+    "cmd+3": "/Applications/Microsoft Outlook.app",
+    "cmd+4": "/Applications/iTerm.app"
+  },
+  "commands": {
+    "cmd+6": [
+      {
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 5
+      },
+      {
+        "command": "gpascript",
+        "delay": 5
+      },
+      {
+        "command": "it-split v1run nt v2run",
+        "delay": 1
+      }
+    ],
+    "cmd+7": [
+      {
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 5
+      },
+      {
+        "command": "xx",
+        "delay": 1
+      },
+      {
+        "command": "it-split v1run nt",
+        "delay": 1
+      }
+    ],
+    "cmd+8": [
+      {
+        "comment": "Open v1 Pull requests",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/openai-chatbot-ui/pulls",
+        "delay": 0
+      }
+    ],
+    "cmd+9": [
+      {
+        "comment": "Linear: Board",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/kanban-board-02caddc9577d?filter=eyJhbmQiOlt7ImFzc2lnbmVlIjp7Im9yIjpbeyJpc01lIjp7ImVxIjp0cnVlfX1dfX1dfQ&layout=board&ordering=priority&grouping=workflowState&subGrouping=assignee&showCompletedIssues=all&showSubIssues=true&showTriageIssues=false",
+        "delay": 0
+      }
+    ],
+    "cmd+0": [
+      {
+        "comment": "Open v1 local",
+        "file_command": "smart_browser_url.py http://localhost:8002 http://localhost:8998",
+        "delay": 0
+      }
+    ],
+    "aaq": [
+      {
+        "comment": "Show automations in pycharm",
+        "file_command": "activate_window.py PyCharm automations",
+        "delay": 0
+      }
+    ],
+    "aaw": [
+      {
+        "comment": "Show v1 in pycharm",
+        "file_command": "activate_window.py PyCharm openai-chatbot-ui",
+        "delay": 0
+      }
+    ],
+    "bbb": [
+      {
+        "comment": "Show git log",
+        "file_command": "activate_menu_item.py PyCharm Git 'Show Git Log'",
+        "delay": 0
+      }
+    ],
+    "xxs": [
+      {
+        "comment": "Show gpa in pycharm",
+        "file_command": "smart_browser_url.py https://p72gpa.genai.dev.aws.saccap.int/docs#/",
+        "delay": 0
+      }
+    ],
+    "xxg": [
+      {
+        "comment": "Show gpa in pycharm",
+        "file_command": "activate_window.py PyCharm gpa",
+        "delay": 0
+      }
+    ],
+    "xxa": [
+      {
+        "comment": "Show v2 in pycharm",
+        "file_command": "activate_window.py PyCharm p72gpt",
+        "delay": 0
+      }
+    ],
+    "xxv": [
+      {
+        "comment": "Open V1",
+        "file_command": "activate_window.py PyCharm openai-chatbot-ui",
+        "delay": 0
+      }
+    ],
+    "jxh": [
+      {
+        "comment": "Hristo's BOW",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/kanban-board-02caddc9577d?filter=eyJhbmQiOlt7ImFzc2lnbmVlIjp7Im9yIjpbeyJpZCI6eyJpbiI6WyIwOTY5MGZhNy1mODU0LTRkOGYtODgzZC1hY2I4ZjkwNTc0ZjMiXX19XX19XX0&layout=board&ordering=priority&grouping=workflowState&subGrouping=assignee&showCompletedIssues=all&showSubIssues=true&showTriageIssues=false",
+        "delay": 0
+      }
+    ],
+    "jxd": [
+      {
+        "comment": "Daulet's BOW",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/kanban-board-02caddc9577d?filter=eyJhbmQiOlt7ImFzc2lnbmVlIjp7Im9yIjpbeyJpZCI6eyJpbiI6WyJlOTkzZjQyNy04MjJhLTQ3MDAtOThiMy1lYmJhODg1MDNjMWIiXX19XX19XX0&layout=board&ordering=priority&grouping=workflowState&subGrouping=assignee&showCompletedIssues=all&showSubIssues=true&showTriageIssues=false",
+        "delay": 0
+      }
+    ],
+    "jxt": [
+      {
+        "comment": "Tiffany's BOW",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/kanban-board-02caddc9577d?filter=eyJhbmQiOlt7ImFzc2lnbmVlIjp7Im9yIjpbeyJpZCI6eyJpbiI6WyI5N2I0ZWY2YS1iZGNmLTRiOTItYTE3Zi1iYmQxYWY2NzczZGIiXX19XX19XX0&layout=board&ordering=priority&grouping=workflowState&subGrouping=assignee&showCompletedIssues=all&showSubIssues=true&showTriageIssues=false",
+        "delay": 0
+      }
+    ],
+    "xxw": [
+      {
+        "comment": "Go to workday time",
+        "file_command": "smart_browser_url.py https://www.myworkday.com/firm/d/inst/13102!CK5mGhEKBggDEMenAhIHCgUI1A0QGxq-AQoGCAMQgawCErQBEjoI22gaCgoGCAMQp7EBEgAaEQoGCAMQ-qsCEgcKBQjjGRAvGgoKBggDEP_rAhIAGgoKBggDEICsAhIAEjoI22gaCgoGCAMQp7EBEgAaEQoGCAMQ-qsCEgcKBQjjGRASGgoKBggDEP_rAhIAGgoKBggDEICsAhIAEjoI22gSCQoFCAQQ0HYSABoSCgYIAxD_qwISCAoGCOMZEJECGgoKBggDEP_rAhIAGgoKBggDEICsAhIA*7Y8QVjHDKMk~/cacheable-task/2997$2151.htmld#backheader=true",
+        "delay": 0
+      }
+    ],
+    "vv2": [
+      {
+        "comment": "V2:DEV, and start a new conversation",
+        "file_command": "smart_browser_url.py https://p72gpt-v2.genai.dev.aws.saccap.int/desktop/home/newChat?model=anthropic-claude-sonnet-latest&style=0.15&maxTokens=64000",
+        "delay": 0
+      }
+    ],
+    "vv3": [
+      {
+        "comment": "V2:LOC, and start a new conversation",
+        "file_command": "smart_browser_url.py http://localhost:3000/desktop/home/newChat?model=anthropic-claude-sonnet-latest&style=0.15&maxTokens=64000",
+        "delay": 0
+      }
+    ],
+    "vvd": [
+      {
+        "comment": "V2: DEV",
+        "file_command": "smart_browser_url.py https://p72gpt-v2.genai.dev.aws.saccap.int/",
+        "delay": 0
+      }
+    ],
+    "wd7": [
+      {
+        "comment": "JSM review",
+        "file_command": "smart_browser_url.py https://point72.atlassian.net/issues/?jql=project%20%3D%20HELP%0Aand%20status%20in%20%28Canceled%2C%20Closed%2C%20Done%2C%20%22In%20Progress%22%2C%20Open%2C%20%22Partially%20Approved%22%2C%20Pending%2C%20Rejected%2C%20Reopened%2C%20Resolved%2C%20%22Waiting%20for%20approval%22%2C%20%22Waiting%20for%20support%22%2C%20%22Work%20in%20progress%22%29%0AAND%20description%20%21~%20%22intern%22%0AAND%20description%20%21~%20%E2%80%9Ctransfer%E2%80%9D%20and%20summary%20%21~%20%22contingent%22%0Aand%20reporter%20%3D%20637bce613c26ca7fa0d2138e%0AORDER%20BY%20created%20DESC",
+        "delay": 0
+      }
+    ],
+    "jjj": [
+      {
+        "comment": "JIRA: JG Tech Owner stories in sprint",
+        "file_command": "smart_browser_url.py https://prdjira.saccap.int/secure/RapidBoard.jspa?rapidView=2444&quickFilter=25812#",
+        "delay": 0
+      }
+    ],
+    "xxr": [
+      {
+        "comment": "Show P72GPT Releases",
+        "file_command": "smart_browser_url.py https://prdjira.saccap.int/projects/GLP?selectedItem=com.atlassian.jira.jira-projects-plugin:release-page&status=released-unreleased&contains=p72gpt",
+        "delay": 0
+      }
+    ],
+    "wsj": [
+      {
+        "comment": "WEB: Wall Street Journal",
+        "file_command": "smart_browser_url.py https://www.wsj.com",
+        "delay": 0
+      }
+    ],
+    "nyp": [
+      {
+        "comment": "WEB: NyPost",
+        "file_command": "smart_browser_url.py https://nypost.com/",
+        "delay": 0
+      }
+    ],
+    "xxp": [
+      {
+        "comment": "P72GPT Prod data with sso",
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=516786487246&role_name=P72_PowerUser",
+        "delay": 4
+      },
+      {
+        "file_command": "smart_browser_url.py https://us-east-1.console.aws.amazon.com/s3/buckets/p72gpt-conversation-history-prd?prefix=users/&region=us-east-1&bucketType=general",
+        "delay": 1
+      }
+    ],
+    "xxd": [
+      {
+        "comment": "P72GPT DEV data with sso",
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 4
+      },
+      {
+        "file_command": "smart_browser_url.py https://us-east-1.console.aws.amazon.com/s3/buckets/p72gpt-conversation-history-dev?bucketType=general&region=us-east-1&tab=objects",
+        "delay": 1
+      }
+    ],
+    "v1p": [
+      {
+        "comment": "V1: Prod",
+        "file_command": "smart_browser_url.py https://p72gpt.genai.prd.aws.saccap.int/",
+        "delay": 4
+      }
+    ],
+    "v1d": [
+      {
+        "comment": "V1: DEV",
+        "file_command": "smart_browser_url.py https://p72gpt.genai.dev.aws.saccap.int/",
+        "delay": 4
+      }
+    ],
+    "v1k": [
+      {
+        "comment": "V1: Kill",
+        "command": "v1kill",
+        "delay": 1
+      },
+      {
+        "comment": "V1: Kill",
+        "command": "v1run",
+        "delay": 10
+      },
+      {
+        "comment": "V1: Run",
+        "file_command": "smart_browser_url.py http://localhost:8002",
+        "delay": 0
+      }
+    ],
+    "xxc": [
+      {
+        "comment": "Outlook Calendar",
+        "file_command": "keystroke.py 'Microsoft Outlook' '2' command option",
+        "delay": 0
+      }
+    ],
+    "xxe": [
+      {
+        "comment": "Outlook Create New Event",
+        "file_command": "keystroke.py 'Microsoft Outlook' ';' command option",
+        "delay": 0
+      }
+    ],
+    "xxm": [
+      {
+        "comment": "Outlook Mail",
+        "file_command": "keystroke.py 'Microsoft Outlook' '1' command",
+        "delay": 0
+      }
+    ],
+    "xga": [
+      {
+        "comment": "Open v1 Pull requests",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/openai-chatbot-ui/actions",
+        "delay": 0
+      }
+    ],
+    "xpb": [
+      {
+        "comment": "Open GPA Branches",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/gpa/branches",
+        "delay": 0
+      }
+    ],
+    "xpx": [
+      {
+        "comment": "Open GPA actions",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/gpa/actions",
+        "delay": 0
+      }
+    ],
+    "xpp": [
+      {
+        "comment": "Open GPA PR",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/gpa/pulls",
+        "delay": 0
+      }
+    ],
+    "xgg": [
+      {
+        "comment": "Show v1 in iTerm",
+        "file_command": "activate_window.py iTerm node",
+        "delay": 0
+      }
+    ],
+    "xaa": [
+      {
+        "comment": "Show automation actions log",
+        "command": "pycharm /Users/john.greek/dev/keystroke-commander/key_listener_actions.csv",
+        "delay": 0
+      }
+    ],
+    "xal": [
+      {
+        "comment": "Show admin page",
+        "file_command": "smart_browser_url.py http://localhost:8000/admin/status",
+        "delay": 0
+      }
+    ],
+    "xdx": [
+      {
+        "command": "gpastop",
+        "delay": 1
+      },
+      {
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 5
+      },
+      {
+        "command": "gpascript",
+        "delay": 10
+      },
+      {
+        "file_command": "split_panes.py v1run nt",
+        "delay": 1
+      }
+    ],
+    "xxl": [
+      {
+        "file_command": "smart_browser_url.py http://localhost:8998/",
+        "delay": 0
+      }
+    ],
+    "xgd": [
+      {
+        "file_command": "smart_browser_url.py https://app.datadoghq.com/dashboard/mqd-2d8-65q/p72gpt-ui-development?fromUser=false&refresh_mode=sliding&tpl_var_env%5B0%5D=p72gpt.genai.prd.aws.saccap.int&tpl_var_env%5B1%5D=epic-p72gpt.genai.prd.aws.saccap.int&tpl_var_view.url_host%5B0%5D=p72gpt&tpl_var_view.url_host%5B1%5D=p72gpt.genai.prd.aws.saccap.int&live=true",
+        "command": "GPA Dashboard",
+        "delay": 0
+      }
+    ],
+    "xxt": [
+      {
+        "command": "xx",
+        "delay": 0
+      }
+    ],
+    "xdl": [
+      {
+        "command": "gpastop",
+        "delay": 1
+      },
+      {
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 6
+      },
+      {
+        "command": "gpascript",
+        "delay": 60
+      },
+      {
+        "file_command": "split_panes.py v1loc nt",
+        "delay": 1
+      },
+      {
+        "comment": "Wait for localhost and open local endpoints",
+        "file_command": "smart_browser_url.py http://localhost:8002 http://localhost:8998 --wait-for-availability",
+        "delay": 10
+      }
+    ],
+    "xdr": [
+      {
+        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
+        "delay": 5
+      },
+      {
+        "command": "it-split v1run nt",
+        "delay": 1
+      },
+      {
+        "comment": "Wait for localhost and open local endpoints",
+        "file_command": "smart_browser_url.py http://localhost:8002 http://localhost:8998 --wait-for-availability",
+        "delay": 10
+      }
+    ],
+    "xcs": [
+      {
+        "file_command": "sheet.py",
+        "delay": 0
+      }
+    ],
+    "xnn": [
+      {
+        "file_command": "notes_writer.py",
+        "delay": 0
+      }
+    ],
+    "xws": [
+      {
+        "file_command": "notes_mgr.py find 'Web search prompts'",
+        "delay": 0
+      }
+    ],
+    "xw2": [
+      {
+        "file_command": "notes_mgr.py find 'Web search prompts'",
+        "delay": 0
+      }
+    ],
+    "xpr": [
+      {
+        "comment": "v1: PR",
+        "command": "v1 && gprc",
+        "delay": 1
+      },
+      {
+        "command": "v1 && gpcp",
+        "delay": 0
+      }
+    ],
+    "qqw": [
+      {
+        "comment": "Open last screenshot",
+        "file_command": "file_utils.py open /Users/john.greek/Screenshots",
+        "delay": 0
+      }
+    ],
+    "ddx": [
+      {
+        "comment": "Open last screenshot",
+        "file_command": "file_utils.py open /Users/john.greek/Screenshots",
+        "delay": 0
+      }
+    ],
+    "qff": [
+      {
+        "comment": "Organize files by date (replace)",
+        "file_command": "file_utils.py organize /Users/john.greek/Downloads /Users/john.greek/Downloads/archives --replace",
+        "delay": 0
+      },
+      {
+        "comment": "Organize Desktop files by date",
+        "file_command": "file_utils.py organize /Users/john.greek/Desktop /Users/john.greek/Desktop/archives --replace",
+        "delay": 0
+      }
+    ],
+    "xgx": [
+      {
+        "comment": "Datadog Synthetic Tests",
+        "file_command": "smart_browser_url.py https://app.datadoghq.com/synthetics/tests?query=&cols=monitorStatus%2Ctype%2Cname%2Cdomain%2Ctags%2Cenvs%2Cuptime&page_index=0&refresh_mode=sliding&from_ts=1754475280956&to_ts=1754489680956&live=true",
+        "delay": 0
+      }
+    ],
+    "xto": [
+      {
+        "comment": "John Tech Owner stories",
+        "file_command": "smart_browser_url.py https://prdjira.saccap.int/secure/RapidBoard.jspa?rapidView=2444&view=detail&quickFilter=25812#",
+        "delay": 0
+      }
+    ],
+    "xtt": [
+      {
+        "comment": "John regular stories",
+        "file_command": "smart_browser_url.py https://prdjira.saccap.int/secure/RapidBoard.jspa?rapidView=2444&quickFilter=25703#",
+        "delay": 0
+      }
+    ],
+    "xra": [
+      {
+        "comment": "Linear: My assigned issues",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/my-issues/assigned",
+        "delay": 0
+      }
+    ],
+    "xrt": [
+      {
+        "comment": "Linear: Team GEN active issues",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/team/GEN/active",
+        "delay": 0
+      }
+    ],
+    "xnx": [
+      {
+        "comment": "Nexus: Open",
+        "file_command": "smart_browser_url.py http://localhost:8339/",
+        "delay": 0
+      }
+    ],
+    "xnl": [
+      {
+        "comment": "Nexus: Logs",
+        "file_command": "smart_browser_url.py https://app.datadoghq.com/logs?query=eks_cluster-name%3Agpa-dev%20service%3Alitellm&agg_m=count&agg_m_source=base&agg_t=count&cols=host%2Cservice&messageDisplay=inline&refresh_mode=sliding&storage=hot&stream_sort=desc&viz=stream&from_ts=1754333986190&to_ts=1754337586190&live=true",
+        "delay": 0
+      }
+    ],
+    "xrl": [
+      {
+        "comment": "Linear: Releases",
+        "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/releases-8e1cc6790d3a",
+        "delay": 0
+      }
+    ],
+    "xcm": [
+      {
+        "comment": "Send Cmd+Shift+A",
+        "file_command": "system_keystroke.py a command shift",
+        "delay": 2
+      },
+      {
+        "comment": "Type Terminal",
+        "file_command": "typewrite.py 'Terminal' --enter",
+        "delay": 2
+      },
+      {
+        "comment": "Type cmod command",
+        "file_command": "typewrite.py 'source ~/.bashrc' --enter",
+        "delay": 2
+      },
+      {
+        "comment": "Type cmod command",
+        "file_command": "typewrite.py 'cmod' --enter",
+        "delay": 0
+      }
+    ],
+    "xcx": [
+      {
+        "comment": "Type cmod command",
+        "file_command": "typewrite.py 'source ~/.bashrc' --enter",
+        "delay": 2
+      },
+      {
+        "comment": "Type cmod command",
+        "file_command": "typewrite.py 'cmod' --enter",
+        "delay": 0
+      }
+    ],
+    "xcp": [
+      {
+        "comment": "Prepare commit",
+        "file_command": "typewrite.py 'commit with one-line commit message. do not mention claude code' --enter",
+        "delay": 0
+      }
+    ],
+    "xcd": [
+      {
+        "comment": "Press Ctrl-C first",
+        "file_command": "system_keystroke.py c control",
+        "delay": 0
+      },
+      {
+        "comment": "Type cdag command",
+        "file_command": "typewrite.py 'source ~/.bashrc' --enter",
+        "delay": 0
+      },
+      {
+        "comment": "Type cdag command",
+        "file_command": "typewrite.py 'cdag' --enter",
+        "delay": 0
+      }
+    ],
+    "yli": [
+      {
+        "comment": "Open litellm-v2 in Cursor",
+        "file_command": "ide_opener.py cursor /Users/john.greek/dev/litellm-v2",
+        "delay": 0
+      }
+    ],
+    "yv1": [
+      {
+        "comment": "Open openai-chatbot-ui in Cursor",
+        "file_command": "ide_opener.py cursor /Users/john.greek/dev/openai-chatbot-ui",
+        "delay": 0
+      }
+    ],
+    "ygp": [
+      {
+        "comment": "Open gpa in Cursor",
+        "file_command": "ide_opener.py cursor /Users/john.greek/dev/gpa",
+        "delay": 0
+      }
+    ],
+    "ynx": [
+      {
+        "comment": "Open nexus in Cursor",
+        "file_command": "ide_opener.py cursor /Users/john.greek/dev/nexus",
+        "delay": 0
+      }
+    ],
+    "xcc": [
+      {
+        "comment": "Check for new commits in better-chatbot upstream",
+        "command": "cd /Users/john.greek/dev/nexus && ./private/check-commits.sh",
+        "delay": 0
+      }
+    ],
+    "xbx": [
+      {
+        "comment": "Find baseball.md and copy to clipboard with xbx",
+        "file_command": "md_clipboard.py baseball",
+        "delay": 0
+      }
+    ]
+  }
+}
