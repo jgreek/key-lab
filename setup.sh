@@ -1,5 +1,5 @@
 #!/bin/bash
-# Keystroke Commander Setup
+# Key Lab Setup
 
 cd "$(dirname "$0")"
 

@@ -1,4 +1,4 @@
-# Keystroke Commander
+# Key Lab
 
 A powerful and configurable keyboard shortcut manager for macOS.
 

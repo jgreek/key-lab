@@ -1,5 +1,5 @@
 #!/bin/bash
-# Keystroke Commander Runner
+# Key Lab Runner
 
 cd "$(dirname "$0")"
 

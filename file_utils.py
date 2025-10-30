@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Mac-only file utilities for keystroke commander
+Mac-only file utilities for key lab
 Usage: 
   python file_utils.py open <directory> [count] [file_extensions...]
   python file_utils.py organize <source_dir> <destination_dir> [--copy | --replace]

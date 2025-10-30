@@ -25,16 +25,9 @@
     ],
     "cmd+7": [
       {
-        "file_command": "smart_browser_url.py https://d-906776941d.awsapps.com/start/#/console?account_id=794934892411&role_name=P72_PowerUser",
-        "delay": 5
-      },
-      {
-        "command": "xx",
-        "delay": 1
-      },
-      {
-        "command": "it-split v1run nt",
-        "delay": 1
+        "comment": "Nexus: Open",
+        "file_command": "smart_browser_url.py http://localhost:8080/",
+        "delay": 0
       }
     ],
     "cmd+8": [
@@ -93,6 +86,13 @@
         "delay": 0
       }
     ],
+    "xxn": [
+      {
+        "comment": "Show nexus in pycharm",
+        "file_command": "activate_window.py PyCharm nexus",
+        "delay": 0
+      }
+    ],
     "xxa": [
       {
         "comment": "Show v2 in pycharm",
@@ -111,6 +111,13 @@
       {
         "comment": "Hristo's BOW",
         "file_command": "smart_browser_url.py https://linear.app/p72-glp/view/kanban-board-02caddc9577d?filter=eyJhbmQiOlt7ImFzc2lnbmVlIjp7Im9yIjpbeyJpZCI6eyJpbiI6WyIwOTY5MGZhNy1mODU0LTRkOGYtODgzZC1hY2I4ZjkwNTc0ZjMiXX19XX19XX0&layout=board&ordering=priority&grouping=workflowState&subGrouping=assignee&showCompletedIssues=all&showSubIssues=true&showTriageIssues=false",
+        "delay": 0
+      }
+    ],
+    "jxr": [
+      {
+        "comment": "Ruben's BOW",
+        "file_command": "smart_browser_url.py https://linear.app/point72/view/assigned-to-ruben-18c69e9d161f",
         "delay": 0
       }
     ],
@@ -272,6 +279,13 @@
         "delay": 0
       }
     ],
+    "xna": [
+      {
+        "comment": "Open Nexus GitHub Actions",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/p72-nexus/actions",
+        "delay": 0
+      }
+    ],
     "xpb": [
       {
         "comment": "Open GPA Branches",
@@ -413,17 +427,6 @@
         "delay": 0
       }
     ],
-    "xpr": [
-      {
-        "comment": "v1: PR",
-        "command": "v1 && gprc",
-        "delay": 1
-      },
-      {
-        "command": "v1 && gpcp",
-        "delay": 0
-      }
-    ],
     "qqw": [
       {
         "comment": "Open last screenshot",
@@ -453,7 +456,7 @@
     "xgx": [
       {
         "comment": "Datadog Synthetic Tests",
-        "file_command": "smart_browser_url.py https://app.datadoghq.com/synthetics/tests?query=&cols=monitorStatus%2Ctype%2Cname%2Cdomain%2Ctags%2Cenvs%2Cuptime&page_index=0&refresh_mode=sliding&from_ts=1754475280956&to_ts=1754489680956&live=true",
+        "file_command": "smart_browser_url.py https://app.datadoghq.com/synthetics/tests?query=tag%3Ap72gpt-basics&cols=monitorStatus%2Ctype%2Cname%2Cdomain%2Ctags%2Cenvs%2Cuptime&page_index=0&refresh_mode=sliding&test-cols=monitorStatus%7Ctype%7Cname%7Cdomain%7Ctags%7Cenvs%7Cuptime&from_ts=1760905664565&to_ts=1760992064565&live=true",
         "delay": 0
       }
     ],
@@ -488,7 +491,7 @@
     "xnx": [
       {
         "comment": "Nexus: Open",
-        "file_command": "smart_browser_url.py http://localhost:8339/",
+        "file_command": "smart_browser_url.py http://localhost:8080/",
         "delay": 0
       }
     ],
@@ -603,6 +606,83 @@
       {
         "comment": "Find baseball.md and copy to clipboard with xbx",
         "file_command": "md_clipboard.py baseball",
+        "delay": 0
+      }
+    ],
+    "xcg": [
+      {
+        "comment": "Open ChatGPT Enterprise",
+        "file_command": "smart_browser_url.py https://chatgpt.com/",
+        "delay": 0
+      }
+    ],
+    "xnt": [
+      {
+        "comment": "Nexus UI automation tests",
+        "file_command": "smart_browser_url.py https://app.datadoghq.com/synthetics/tests?query=tag%3Anexus&cols=monitorStatus%2Ctype%2Cname%2Cdomain%2Ctags%2Cenvs%2Cuptime&page_index=0&refresh_mode=sliding&from_ts=1758564247403&to_ts=1758578647403&live=true",
+        "delay": 0
+      }
+    ],
+    "xnp": [
+      {
+        "comment": "Open Nexus Pull requests",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/p72-nexus/pulls",
+        "delay": 0
+      }
+    ],
+    "xnd": [
+      {
+        "comment": "Nexus: DEV",
+        "file_command": "smart_browser_url.py https://nexus.genai.dev.aws.saccap.int/",
+        "delay": 0
+      }
+    ],
+    "xnr": [
+      {
+        "comment": "Run nexrun command",
+        "command": "nexrun",
+        "delay": 0
+      }
+    ],
+    "qdm": [
+      {
+        "comment": "Show genai-docs in PyCharm",
+        "file_command": "activate_window.py PyCharm genai-docs",
+        "delay": 0
+      }
+    ],
+    "qda": [
+      {
+        "comment": "Open genai-docs GitHub Actions",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/genai-docs/actions",
+        "delay": 0
+      }
+    ],
+    "qdl": [
+      {
+        "comment": "genai-docs: Open local dev",
+        "file_command": "smart_browser_url.py http://localhost:8403/",
+        "delay": 0
+      }
+    ],
+    "qdp": [
+      {
+        "comment": "Open genai-docs Pull requests",
+        "file_command": "smart_browser_url.py https://github.prod.devops.point72.com/9537-GenAI/genai-docs/pulls",
+        "delay": 0
+      }
+    ],
+    "qdr": [
+      {
+        "comment": "Run genai-docs dev command",
+        "command": "cd /Users/john.greek/dev/genai-docs/local_data && ./run.docs.sh",
+        "delay": 0
+      }
+    ],
+    "yqd": [
+      {
+        "comment": "Open genai-docs in Cursor",
+        "file_command": "ide_opener.py cursor /Users/john.greek/dev/genai-docs",
         "delay": 0
       }
     ]
